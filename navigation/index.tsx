@@ -3,13 +3,19 @@
  * https://reactnavigation.org/docs/getting-started
  *
  */
-import { FontAwesome } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {
   NavigationContainer,
   DefaultTheme,
   DarkTheme,
 } from "@react-navigation/native";
+import {
+  Foundation,
+  Ionicons,
+  AntDesign,
+  MaterialIcons,
+  FontAwesome,
+} from "@expo/vector-icons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 import { ColorSchemeName, Pressable } from "react-native";
@@ -26,6 +32,8 @@ import {
   RootTabScreenProps,
 } from "../types";
 import LinkingConfiguration from "./LinkingConfiguration";
+import TabOneScreen from "../screens/TabOneScreen";
+import VideoScreen from "../screens/videoScreen/VideoScreen";
 
 export default function Navigation({
   colorScheme,
@@ -56,6 +64,8 @@ function RootNavigator() {
         component={BottomTabNavigator}
         options={{ headerShown: false }}
       />
+      <Stack.Screen name="VideoScreen" component={VideoScreen} />
+
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
@@ -79,17 +89,19 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}
     >
       <BottomTab.Screen
-        name="TabOne"
+        name="Home"
         component={HomeScreen}
-        options={({ navigation }: RootTabScreenProps<"TabOne">) => ({
-          title: "Tab One",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        options={({ navigation }: RootTabScreenProps<"Home">) => ({
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <Foundation name="home" size={30} color={color} />
+          ),
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate("Modal")}
@@ -107,12 +119,46 @@ function BottomTabNavigator() {
           ),
         })}
       />
+
       <BottomTab.Screen
-        name="TabTwo"
+        name="Explore"
         component={TabTwoScreen}
         options={{
           title: "Tab Two",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="compass-outline" size={30} color={color} />
+          ),
+        }}
+      />
+
+      <BottomTab.Screen
+        name="New"
+        component={TabOneScreen}
+        options={{
+          title: "New",
+          tabBarIcon: ({ color }) => (
+            <AntDesign name="pluscircleo" size={30} color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Subscriptions"
+        component={TabOneScreen}
+        options={{
+          title: "Subscriptions",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="subscriptions" size={30} color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Library"
+        component={TabOneScreen}
+        options={{
+          title: "Library",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="video-collection" size={30} color={color} />
+          ),
         }}
       />
     </BottomTab.Navigator>
