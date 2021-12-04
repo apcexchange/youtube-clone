@@ -4,6 +4,7 @@ import { BottomSheetFlatList } from "@gorhom/bottom-sheet";
 import comments from "../../assets/data/comments.json";
 import VideoComment from "../videoComment/VideoComment";
 
+
 interface VideoCommentsProps {}
 
 const VideoComments = (props: VideoCommentsProps) => {
