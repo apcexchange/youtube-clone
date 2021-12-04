@@ -81,7 +81,8 @@ commentUserInfoTitle: {
     color: "white",
     fontSize: 12,
     fontWeight: "bold",
-    margin:5
+    margin:10,
+
 },
 
 userInfoSubscribers: {

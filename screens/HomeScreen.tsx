@@ -5,13 +5,11 @@ import videos from "../assets/data/videos.json";
 
 export default function HomeScreen() {
   return (
-    <ScrollView>
       <View>
         <FlatList
           data={videos}
           renderItem={({ item }) => <VideoListItem video={item} />}
         />
       </View>
-    </ScrollView>
   );
 }
