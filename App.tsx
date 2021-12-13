@@ -21,8 +21,6 @@ export default function App() {
     return (
       <SafeAreaProvider>
         <Navigation colorScheme={"dark"} />
-        {/* <VideoScreen /> */}
-        {/* <HomeScreen /> */}
         <StatusBar />
       </SafeAreaProvider>
     );

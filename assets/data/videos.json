@@ -1,49 +1,49 @@
 [{
   "id": "1",
   "createdAt": "5 months ago",
-  "title": "Build a Realtime Chat App in React Native (tutorial for beginners) 🔴  ",
-  "thumbnail": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/thumbnails/thumbnail1.jpeg",
+  "title": "Build Simple Chat App in React Native (tutorial for beginners) 🔴  ",
+  "thumbnail": "https://i.ibb.co/Vj9sLp4/Whats-App-Image-2021-08-14-at-1-13-16-AM.jpg",
   "videoUrl": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
   "duration": 384,
   "user": {
-    "name": "Vadim Savin",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg"
+    "name": "Akam peter",
+    "image": "https://i.ibb.co/Vj9sLp4/Whats-App-Image.jpg"
   },
   "views": 357000
 }, {
   "id": "2",
   "createdAt": "2 months ago",
-  "title": "🔴 Build the Uber clone in React Native (Tutorial for Beginners)",
-  "thumbnail": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/thumbnails/thumbnail2.jpeg",
+  "title": "Iam a React Native developer",
+  "thumbnail": "https://i.ibb.co/64XzFB9/Mobile-Developer.jpg",
   "videoUrl": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
   "duration": 584,
   "user": {
-    "name": "Vadim Savin",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg"
+    "name": "Peter Chinedu",
+    "image": "https://i.ibb.co/Vj9sLp4/Whats-App-Image.jpg"
   },
   "views": 257000
 }, {
   "id": "3",
   "createdAt": "2 months ago",
-  "title": "How Graham Stephan makes $4,578,896.32 a year on YouTube",
-  "thumbnail": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/thumbnails/thumbnail3.jpeg",
+  "title": "I can guide you on how to  get started with react native",
+  "thumbnail": "https://i.ibb.co/58Z0BjX/White-Red-Bold-Simple-Family-Vlog-Youtube-Thumbnail.png",
   "videoUrl": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
   "duration": 584,
   "user": {
-    "name": "Graham Stephan",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/graham.jpg"
+    "name": "Mobile dev",
+    "image": "https://i.ibb.co/Vj9sLp4/Whats-App-Image.jpg"
   },
   "views": 257000
 }, {
   "id": "",
   "createdAt": "2 months ago",
-  "title": "My One Month Bitcoin Mining Journey",
-  "thumbnail": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/thumbnails/thumbnail4.jpeg",
+  "title": "I can also guide you to become a kotlin developer",
+  "thumbnail": "https://i.ibb.co/tQDNWcb/Gradient-Blue-Medical-Healthy-Youtube-Thumbnail.png",
   "videoUrl": "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
   "duration": 584,
   "user": {
-    "name": "Biahaze",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/biahaze.jpg"
+    "name": "Kotlin Dev",
+    "image": "https://i.ibb.co/Vj9sLp4/Whats-App-Image.jpg"
   },
   "views": 257000
 }]

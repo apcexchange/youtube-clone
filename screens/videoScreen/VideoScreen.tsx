@@ -37,7 +37,7 @@ function VideoScreen() {
     console.log("clicked");
   };
 
-  const snapPoints = useMemo(() => ["65%", "68%"], []);
+  const snapPoints = useMemo(() => ["65%", "70%"], ["100%"]);
 
   return (
     <View style={{ backgroundColor: "#141414", flex: 1 }}>

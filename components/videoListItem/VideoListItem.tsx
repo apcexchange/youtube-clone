@@ -35,7 +35,7 @@ export default function VideoListItem(props: VideoListItemProps) {
   }
 
   const openVideoPage = () => {
-    navigation.navigate("VideoScreen", { id: video.id });
+    navigation.navigate("VideoScreen");
   };
 
   return (

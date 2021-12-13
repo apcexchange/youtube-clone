@@ -10,11 +10,10 @@ import {
   DarkTheme,
 } from "@react-navigation/native";
 import {
-  Foundation,
   Ionicons,
   AntDesign,
   MaterialIcons,
-  FontAwesome,
+  Foundation,
 } from "@expo/vector-icons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
@@ -31,9 +30,10 @@ import {
   RootTabParamList,
   RootTabScreenProps,
 } from "../types";
-import LinkingConfiguration from "./LinkingConfiguration";
+// import LinkingConfiguration from "./LinkingConfiguration";
 import TabOneScreen from "../screens/TabOneScreen";
 import VideoScreen from "../screens/videoScreen/VideoScreen";
+import HomeStack from "./HomeStack";
 
 export default function Navigation({
   colorScheme,
@@ -42,7 +42,7 @@ export default function Navigation({
 }) {
   return (
     <NavigationContainer
-      linking={LinkingConfiguration}
+      // linking={LinkingConfiguration}
       theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
     >
       <RootNavigator />
@@ -92,32 +92,18 @@ function BottomTabNavigator() {
       initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
+        headerShown: false,
       }}
     >
       <BottomTab.Screen
         name="Home"
-        component={HomeScreen}
-        options={({ navigation }: RootTabScreenProps<"Home">) => ({
-          title: "Home",
+        component={HomeStack}
+        options={{
+          title: "Tab Two",
           tabBarIcon: ({ color }) => (
             <Foundation name="home" size={30} color={color} />
           ),
-          headerRight: () => (
-            <Pressable
-              onPress={() => navigation.navigate("Modal")}
-              style={({ pressed }) => ({
-                opacity: pressed ? 0.5 : 1,
-              })}
-            >
-              <FontAwesome
-                name="info-circle"
-                size={25}
-                color={Colors[colorScheme].text}
-                style={{ marginRight: 15 }}
-              />
-            </Pressable>
-          ),
-        })}
+        }}
       />
 
       <BottomTab.Screen
@@ -168,9 +154,3 @@ function BottomTabNavigator() {
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof FontAwesome>["name"];
-  color: string;
-}) {
-  return <FontAwesome size={30} style={{ marginBottom: -3 }} {...props} />;
-}

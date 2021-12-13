@@ -2,8 +2,10 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {},
-  
-  videocard: {},
+
+  videocard: {
+    marginVertical: 10,
+  },
 
   thumbnail: {
     width: "100%",
